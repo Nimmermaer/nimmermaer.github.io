@@ -1,0 +1,13 @@
+@import "~materialize-css/dist/css/materialize.css";
+
+nav {
+    background-color: grey;
+    display: block;
+    height: 50px;
+}
+.container {
+    padding-top: 20px;
+}
+nav #slide-out {
+    color: #000;
+}
