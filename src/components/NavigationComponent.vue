@@ -1,10 +1,10 @@
-<nav>
+<template>
     <nav>
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class="user-view">
                     <div class="background">
-                        <img src="/src/images/giraffe_wolf_m.png">
+                        <img src="../static/img/giraffe_wolf_m.png">
                     </div>
                     <p>Bitte testen</p>
                 </div>
@@ -19,4 +19,14 @@
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </nav>
-</nav>
+</template>
+
+<script>
+    export default {
+        name: "NavigationComponent"
+    }
+</script>
+
+<style scoped>
+
+</style>
