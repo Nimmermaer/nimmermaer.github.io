@@ -5,10 +5,10 @@ const {VueLoaderPlugin} = require('vue-loader'),
     webpack = require('webpack'),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
     path = require('path'),
-    dist = 'dist',
-    MiniCssExtractPlugin  = require('mini-css-extract-plugin');
+    workboxPlugin = require('workbox-webpack-plugin'),
+    MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-function resolve (dir) {
+function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 
@@ -52,6 +52,10 @@ module.exports = {
                 test: /\.(js|vue)$/,
                 use: 'eslint-loader',
                 enforce: 'pre'
+            },
+            {
+                test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+                loader: 'url-loader'
             }
         ]
     },
@@ -70,6 +74,12 @@ module.exports = {
         }]),
         new MiniCssExtractPlugin({
             filename: 'main.css'
+        }),
+        new workboxPlugin.GenerateSW({
+            swDest: 'sw.js',
+            clientsClaim: true,
+            skipWaiting: true,
         })
+
     ]
 };

@@ -9,11 +9,6 @@ new Vue({
   render: h => h(App)
 })
 
-new Vue({
-  el: '#nav',
-  render
-})
-
 let options = [{
   edge: 'left'
 }]

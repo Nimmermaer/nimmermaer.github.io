@@ -1,17 +1,13 @@
 <template>
-    <div class="full-width center-content">
-        <range-component range="30"/>
-    </div>
+    <page-component/>
 </template>
 
 <script>
-    import RangeComponent from './components/RangeComponent'
-    import NavigationComponent from './components/NavigationComponent'
+    import PageComponent from './pages/PageComponent.vue'
 
     export default {
         components: {
-            RangeComponent,
-            NavigationComponent
+            PageComponent
         }
     }
 </script>
