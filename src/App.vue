@@ -3,11 +3,11 @@
 </template>
 
 <script>
-    import PageComponent from './pages/PageComponent.vue'
+import PageComponent from './pages/PageComponent.vue'
 
-    export default {
-        components: {
-            PageComponent
-        }
-    }
+export default {
+  components: {
+    PageComponent
+  }
+}
 </script>
