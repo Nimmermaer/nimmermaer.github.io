@@ -1,63 +1,31 @@
 <template>
-  <nav class="main-nav">
-    <ul>
-      <li>
-        <router-link :to="{name: 'Home'}">Home</router-link>
-      </li>
-      <li>
-        <router-link :to="{name: 'About'}">About</router-link>
-      </li>
-    </ul>
-    <ul>
-      <li v-for="(id, index) in userIds" :key="index">
-        <router-link :to="{name:'ViewProfile', params: {user_id: id}}"><span>Profile {{id}}</span></router-link>
-      </li>
-    </ul>
-    <h2>nNavigation Controls</h2>
-    <ul>
-      <li>
-        <button @click="goBack">Go Back</button></li>
-      <li>
-        <button @click="goHome">Redirect to Home</button></li>
-      <li>
-        <button @click="goForward">Forward</button></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <nav class="nav-extended indigo darken-2">
+      <div class="nav-content">
+        <router-link :to="{name: 'Index'}">
+          <span class="nav-title">Smoothier</span>
+        </router-link>
+        <a href="" class="btn-floating btn-large halfway-fab pink">
+          <router-link :to="{name: 'AddSmoothie'}">
+            <i class="material-icons">add</i>
+          </router-link>
+        </a>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'Navbar',
-  data () {
-    return {
-      userIds: ['1', '2', '3', '4']
-    }
-  },
-  methods: {
-    goHome () {
-      this.$router.push({name: 'Home'})
-    },
-    goBack () {
-      this.$router.go(-1)
-    },
-    goForward () {
-      this.$router.go(+1)
+  export default {
+    name: "Navbar",
+    data() {
+      return {}
     }
   }
-}
 </script>
 
 <style scoped>
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  a {
-    color: blue;
-  }
-
-  a.router-link-exact-active {
-    color: purple;
+  .navbar nav {
+    padding: 0 20px;
   }
 </style>
