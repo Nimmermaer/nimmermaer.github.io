@@ -1,0 +1,3 @@
+[submodule "public/themes/careercanvas"]
+	path = public/themes/careercanvas
+	url = https://github.com/felipecordero/careercanvas.git
