@@ -1,0 +1,4 @@
+baseURL = 'https://nimmermaer.github.io/'
+languageCode = 'de-de'
+title = 'Meine Hugo Seite'
+publishDir = 'public'
