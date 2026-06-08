@@ -40,8 +40,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install PostCSS CLI
-        run: npm install -g postcss-cli postcss autoprefixer
+      - name: Install dependencies
+        run: npm install
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
