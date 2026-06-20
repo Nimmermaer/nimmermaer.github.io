@@ -21,6 +21,8 @@ defaultContentLanguageInSubdir = false
   writeStats = true
 
 [params]
+  firstName = "Michael"
+  lastName = "Blunck"
   name = "Michael Blunck"
   email = "mi.blunck@gmail.com"
   profile_image = "/images/your-profile.jpg" # Hier später dein Bild hinterlegen
