@@ -27,16 +27,13 @@ baseurl: ""
 url: "https://nimmermaer.github.io"
 github_username: nimmermaer
 
-# Persönliche Daten (in Templates via site.author zugänglich)
-author:
-  name: Michael Blunck
-  first_name: Michael
-  last_name: Blunck
-  email: mi.blunck@gmail.com
-  github: nimmermaer
-  location: Köln, Deutschland
-  tagline: "Web Developer & Fachinformatiker"
-  bio: "Leidenschaftlicher Entwickler mit Fokus auf cleanen Code, moderne Webstandards und performante Architekturen."
+# Minima erwartet author als einfachen String (wird im Footer als Name angezeigt)
+author: Michael Blunck
+
+# Zusätzliche persönliche Daten für eigene Templates
+location: "Köln, Deutschland"
+tagline: "Web Developer & Fachinformatiker"
+bio: "Leidenschaftlicher Entwickler mit Fokus auf cleanen Code, moderne Webstandards und performante Architekturen."
 
 # Build settings
 theme: minima
