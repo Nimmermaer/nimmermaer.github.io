@@ -22,5 +22,5 @@ Ich entwickle leidenschaftlich moderne Webanwendungen mit Fokus auf:
 
 ### Kontakt
 
-- 📧 [mi.blunck@gmail.com](mailto:mi.blunck@gmail.com)
 - 💻 [github.com/nimmermaer](https://github.com/nimmermaer)
+- 🔐 Kontaktdaten auf der Startseite (bot-geschützt)

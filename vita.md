@@ -50,11 +50,12 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 - Full-Stack-Entwicklung und Betreuung anspruchsvoller Webprojekte für KMUs.
 - Eigenverantwortliche Kundenberatung und Begleitung des gesamten Projektlebenszyklus.
 
-### E-Commerce-Betreuung (parallel zur pädagogischen Leitung)
+### E-Commerce-Betreuung (Familienbetrieb)
 **Aba-Angelshop, Laufen / Obb.** | *August 2010 – August 2012*
 
 - Technische und administrative Betreuung von E-Commerce-Plattformen.
 - Betrieb und Weiterentwicklung auf Basis von OsCommerce und XTCommerce.
+- Bewusste berufliche Auszeit aus dem pädagogischen Bereich mit Fokus auf den Familienbetrieb.
 
 ## Fundierung der Führungskompetenz
 

@@ -5,9 +5,17 @@ title: Michael Blunck
 
 Web Developer und Fachinformatiker aus Köln mit starker Kombination aus technischer Tiefe, Führungserfahrung und adressatengerechter Kommunikation.
 
-📍 Köln, Deutschland · 💻 [github.com/nimmermaer](https://github.com/nimmermaer) · 📧 [mi.blunck@gmail.com](mailto:mi.blunck@gmail.com)
+📍 Köln, Deutschland · 💻 [github.com/nimmermaer](https://github.com/nimmermaer)
+
+<p>
+	<a href="#kontakt">Kontakt anzeigen</a> · <a href="https://github.com/nimmermaer" rel="noopener noreferrer">GitHub-Profil</a>
+</p>
 
 ---
+
+## Kurzprofil
+
+Entwicklerprofil mit Schwerpunkt TYPO3, PHP und nachhaltiger Web-Architektur. Mehrjährige Führungserfahrung in interdisziplinären Teams mit klarem Fokus auf Kommunikation, Qualität und verlässliche Delivery.
 
 ## Profil
 
@@ -55,11 +63,12 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 - Full-Stack-Entwicklung und Betreuung anspruchsvoller Webprojekte für KMUs.
 - Eigenverantwortliche Kundenberatung und Begleitung des gesamten Projektlebenszyklus.
 
-### E-Commerce-Betreuung (parallel zur pädagogischen Leitung)
+### E-Commerce-Betreuung (Familienbetrieb)
 **Aba-Angelshop, Laufen / Obb.** | *August 2010 – August 2012*
 
 - Technische und administrative Betreuung von E-Commerce-Plattformen.
 - Betrieb und Weiterentwicklung auf Basis von OsCommerce und XTCommerce.
+- Bewusste berufliche Auszeit aus dem pädagogischen Bereich mit Fokus auf den Familienbetrieb.
 
 ## Fundierung der Führungskompetenz
 
@@ -82,3 +91,57 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 - Verbindet technische Tiefe mit klarer, adressatengerechter Kommunikation.
 - Führt Teams strukturiert durch anspruchsvolle Projektphasen.
 - Richtet Entwicklung auf nachhaltige Wartbarkeit und nachvollziehbare Qualität aus.
+
+## Kontakt
+
+<div id="kontakt">
+	<p id="contact-hint">Zum Schutz vor Bots werden E-Mail und Telefonnummer erst nach Klick erzeugt.</p>
+	<p>
+		<button id="reveal-contact" type="button">Kontaktdaten freischalten</button>
+	</p>
+	<ul id="contact-list" hidden>
+		<li><a id="contact-email" rel="nofollow noopener noreferrer">E-Mail senden</a></li>
+		<li><a id="contact-phone" rel="nofollow noopener noreferrer">Anrufen</a></li>
+	</ul>
+	<p id="contact-phone-missing" hidden>Telefonnummer folgt.</p>
+</div>
+
+<script>
+	(function () {
+		function decodeChars(codes) {
+			return (codes || []).map(function (c) { return String.fromCharCode(c); }).join("");
+		}
+
+		var revealBtn = document.getElementById("reveal-contact");
+		if (!revealBtn) return;
+
+		revealBtn.addEventListener("click", function () {
+			var email = decodeChars({{ site.contact_email_codes | jsonify }});
+			var phone = decodeChars({{ site.contact_phone_codes | jsonify }});
+
+			var emailLink = document.getElementById("contact-email");
+			var phoneLink = document.getElementById("contact-phone");
+			var phoneMissing = document.getElementById("contact-phone-missing");
+			var list = document.getElementById("contact-list");
+			var hint = document.getElementById("contact-hint");
+
+			if (email && emailLink) {
+				emailLink.href = "mailto:" + email;
+				emailLink.textContent = email;
+			}
+
+			if (phone && phoneLink) {
+				phoneLink.href = "tel:" + phone.replace(/\s+/g, "");
+				phoneLink.textContent = phone;
+			} else {
+				phoneLink.parentElement.hidden = true;
+				phoneMissing.hidden = false;
+			}
+
+			list.hidden = false;
+			hint.textContent = "Kontaktdaten sind jetzt sichtbar.";
+			revealBtn.disabled = true;
+			revealBtn.textContent = "Kontaktdaten geladen";
+		});
+	})();
+</script>

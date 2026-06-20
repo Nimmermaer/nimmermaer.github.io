@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Michael Blunck
-email: mi.blunck@gmail.com
+email: ""
 description: >-
   Portfolio von Michael Blunck – Web Developer & Fachinformatiker.
   Fokus auf cleanen Code, moderne Webstandards und performante Architekturen.
@@ -34,6 +34,11 @@ author: Michael Blunck
 location: "Köln, Deutschland"
 tagline: "Web Developer & Fachinformatiker"
 bio: "Leidenschaftlicher Entwickler mit Fokus auf cleanen Code, moderne Webstandards und performante Architekturen."
+
+# Kontaktinformationen als Zeichencodes statt Klartext,
+# damit sie nicht direkt von einfachen Bots gescrapt werden.
+contact_email_codes: [109, 105, 46, 98, 108, 117, 110, 99, 107, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109]
+contact_phone_codes: []
 
 # Build settings
 theme: minima
