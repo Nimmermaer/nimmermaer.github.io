@@ -92,56 +92,55 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 - Führt Teams strukturiert durch anspruchsvolle Projektphasen.
 - Richtet Entwicklung auf nachhaltige Wartbarkeit und nachvollziehbare Qualität aus.
 
+## Netzwerke
+
+<p>
+	<a href="https://www.linkedin.com/in/michael-blunck-06843079/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+	· <a href="https://www.xing.com/profile/Michael_Blunck4/" target="_blank" rel="noopener noreferrer">XING</a>
+	· <button id="share-page" type="button">Seite teilen</button>
+</p>
+
 ## Kontakt
 
 <div id="kontakt">
-	<p id="contact-hint">Zum Schutz vor Bots werden E-Mail und Telefonnummer erst nach Klick erzeugt.</p>
 	<p>
-		<button id="reveal-contact" type="button">Kontaktdaten freischalten</button>
+		<a
+			href="#kontakt"
+			data-mailto-token="{{ site.contact_email_token }}"
+			data-mailto-vector="{{ site.contact_email_vector }}"
+			rel="nofollow noopener noreferrer"
+		>
+			mi&#64;blunck.com
+		</a>
 	</p>
-	<ul id="contact-list" hidden>
-		<li><a id="contact-email" rel="nofollow noopener noreferrer">E-Mail senden</a></li>
-		<li><a id="contact-phone" rel="nofollow noopener noreferrer">Anrufen</a></li>
-	</ul>
-	<p id="contact-phone-missing" hidden>Telefonnummer folgt.</p>
 </div>
 
 <script>
 	(function () {
-		function decodeChars(codes) {
-			return (codes || []).map(function (c) { return String.fromCharCode(c); }).join("");
+		var shareButton = document.getElementById("share-page");
+		if (!shareButton) {
+			return;
 		}
 
-		var revealBtn = document.getElementById("reveal-contact");
-		if (!revealBtn) return;
+		shareButton.addEventListener("click", async function () {
+			var shareData = {
+				title: document.title,
+				text: "Vita und Kontakt von Michael Blunck",
+				url: window.location.href
+			};
 
-		revealBtn.addEventListener("click", function () {
-			var email = decodeChars({{ site.contact_email_codes | jsonify }});
-			var phone = decodeChars({{ site.contact_phone_codes | jsonify }});
-
-			var emailLink = document.getElementById("contact-email");
-			var phoneLink = document.getElementById("contact-phone");
-			var phoneMissing = document.getElementById("contact-phone-missing");
-			var list = document.getElementById("contact-list");
-			var hint = document.getElementById("contact-hint");
-
-			if (email && emailLink) {
-				emailLink.href = "mailto:" + email;
-				emailLink.textContent = email;
+			if (navigator.share) {
+				try {
+					await navigator.share(shareData);
+				} catch (error) {
+					if (error && error.name !== "AbortError") {
+						window.prompt("Link kopieren:", window.location.href);
+					}
+				}
+				return;
 			}
 
-			if (phone && phoneLink) {
-				phoneLink.href = "tel:" + phone.replace(/\s+/g, "");
-				phoneLink.textContent = phone;
-			} else {
-				phoneLink.parentElement.hidden = true;
-				phoneMissing.hidden = false;
-			}
-
-			list.hidden = false;
-			hint.textContent = "Kontaktdaten sind jetzt sichtbar.";
-			revealBtn.disabled = true;
-			revealBtn.textContent = "Kontaktdaten geladen";
+			window.prompt("Link kopieren:", window.location.href);
 		});
 	})();
 </script>
