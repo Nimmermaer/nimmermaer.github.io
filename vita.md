@@ -1,17 +1,12 @@
 ---
 layout: page
-title: Michael Blunck
----
-
-Web Developer und Fachinformatiker aus Köln mit starker Kombination aus technischer Tiefe, Führungserfahrung und adressatengerechter Kommunikation.
-
-📍 Köln, Deutschland · 💻 [github.com/nimmermaer](https://github.com/nimmermaer) · 📧 [mi.blunck@gmail.com](mailto:mi.blunck@gmail.com)
-
+title: Vita
+permalink: /vita/
 ---
 
 ## Profil
 
-Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Führungserfahrung. Fokus auf komplexe Web-Architekturen (insbesondere TYPO3 und PHP), Teamleitung sowie den Brückenschlag zwischen Technik und fachfremden Stakeholdern.
+Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Führungserfahrung. Fokus auf komplexe Web-Architekturen (insb. TYPO3 und PHP), Teamleitung sowie den Brückenschlag zwischen Technik und fachfremden Stakeholdern.
 
 ## Kernkompetenzen
 
@@ -64,7 +59,7 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 ## Fundierung der Führungskompetenz
 
 ### Gruppenleiter und stellvertretender Leiter
-**AWO Kinderhort Moorrüben (Dachau) und Kinderhof am Bichl (Berchtesgaden)** | *September 2002 – September 2010*
+**AWO Kinderhort Moorrüben (Dachau) & Kinderhof am Bichl (Berchtesgaden)** | *September 2002 – September 2010*
 
 - Verantwortung für Teile der Einrichtungsleitung und Personalorganisation.
 - Langjährige Praxis in Kommunikation, Gruppendynamik und Konfliktlösung.
@@ -74,8 +69,8 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 
 - **TYPO3 CMS Certified Developer**
 - **TYPO3 CMS Certified Integrator**
-- **Fachinformatiker für Anwendungsentwicklung (IHK)** | *WBS Training AG, Köln (2012-2014)*
-- **Staatlich geprüfter Erzieher** | *Fachschule für Sozialpädagogik, Mölln (1999-2002)*
+- **Fachinformatiker für Anwendungsentwicklung (IHK)** | *WBS Training AG, Köln (2012–2014)*
+- **Staatlich geprüfter Erzieher** | *Fachschule für Sozialpädagogik, Mölln (1999–2002)*
 
 ## Arbeitsweise
 
