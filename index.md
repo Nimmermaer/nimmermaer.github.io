@@ -73,7 +73,7 @@ Kombination aus fundierter IT-Fachkompetenz und langjähriger pädagogischer Fü
 ## Fundierung der Führungskompetenz
 
 ### Gruppenleiter und stellvertretender Leiter
-**AWO Kinderhort Moorrüben (Dachau) und Kinderhof am Bichl (Berchtesgaden)** | *September 2002 – September 2010*
+**Kinderhof am Bichl (Berchtesgaden)** | *September 2002 – September 2010*
 
 - Verantwortung für Teile der Einrichtungsleitung und Personalorganisation.
 - Langjährige Praxis in Kommunikation, Gruppendynamik und Konfliktlösung.
