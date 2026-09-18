@@ -1,0 +1,55 @@
+---
+---
+@import "minima";
+
+/* Senior Resume Layout: CSS Grid */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Desktop View: Sidebar links, Main rechts */
+@media screen and (min-width: 900px) {
+  .resume-layout {
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+  }
+}
+
+.resume-sidebar {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-sidebar h2 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.resume-sidebar h2:first-of-type {
+  margin-top: 0;
+}
+
+.resume-sidebar ul {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.resume-main h3 {
+  margin-top: 2rem;
+}
+
+.resume-main h3:first-of-type {
+  margin-top: 0;
+}
+
+/* Entfernt den Standard-Rand für Listen im Lebenslauf */
+.resume-main ul {
+  margin-bottom: 1.5rem;
+}
