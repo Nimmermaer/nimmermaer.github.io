@@ -56,3 +56,28 @@
     max-width: calc(1100px - (30px));
   }
 }
+
+/* Share Button Styling */
+#share-page {
+  background-color: transparent;
+  color: #2a7ae2; /* Entspricht der Standard-Linkfarbe des Themes */
+  border: 1px solid #2a7ae2;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  /* Optische Ausrichtung auf Höhe der Text-Links */
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
+#share-page:hover,
+#share-page:focus {
+  background-color: #2a7ae2;
+  color: #ffffff;
+  outline: none;
+  text-decoration: none;
+}
