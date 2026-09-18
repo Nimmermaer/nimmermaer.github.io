@@ -69,7 +69,7 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 **Schaffrath Digital** | *Oktober 2025 – Heute*
 - **Greenfield-Projekte:** Eigenverantwortliche architektonische Konzeption und Implementierung von TYPO3-Neuprojekten. Fokus auf hochperformante Datenhaltung und Editorial UX.
 - **Agentic Workflows:** Produktive Integration von KI-gestützten Entwicklungsprozessen (GitHub Copilot, lokale LLMs/Ollama) sowie Entwicklung eigener Model Context Protocol (MCP) Server.
-- **Wissensmanagement:** Positionierung als Innovationstreiber. Architektonische Beratung und Wissenstransfer durch Initiierung von Barcamps und Entwicklersprechstunden.
+- **Wissensmanagement:** Architektonische Beratung und proaktive inhaltliche Ausgestaltung etablierter interner Formate (Barcamps, Entwicklersprechstunden). Systematischer Wissenstransfer durch die Konzeption und Durchführung regelmäßiger Fachvorträge und Sessions zu aktuellen Technologietrends und architektonischen Best Practices aus laufenden Projekten.
 - **DevEx & Automatisierung:** Automatisierung reproduzierbarer DDEV-Umgebungen (inkl. Bootstrapping von .env, auth.json, Cache-Warmup, Vite-Integration) zur Reduktion von Rüstzeiten.
 - **Auditing:** Strukturelle Evaluierung von Web-Applikationen mittels spezialisierter Tools für Security (sqlmap), Technical SEO (Screaming Frog) und Accessibility (Axe).
 
