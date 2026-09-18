@@ -61,7 +61,7 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 
 </aside>
 
-<main class="resume-main" markdown="1">
+<div class="resume-main" markdown="1">
 
 ## Berufserfahrung
 
@@ -103,7 +103,7 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 **Kinderhof am Bichl & AWO Kinderhort Moorrüben** | *September 2002 – September 2010*
 - Gruppenleiter und stellvertretender Leiter. Medienpädagogische Arbeit mit Linux-Distributionen zur Vermittlung technischen Verständnisses.
 
-</main>
+</div>
 
 </div>
 
