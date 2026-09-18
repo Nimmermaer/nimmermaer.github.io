@@ -17,9 +17,9 @@ title: "{{ site.title }} – {{ site.tagline }}"
 
 Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konzeption und Umsetzung skalierbarer Digitalarchitekturen. Ich begreife Softwareentwicklung als digitales Handwerk: KI-Tools und Automatisierung nutze ich konsequent für Effizienz (Zero-Downtime-Deployments, Refactoring), aber die architektonische Exzellenz und die passgenaue Lösung für die spezifische Domäne des Kunden bleiben Handarbeit. Mein Fokus liegt auf robuster Datenhaltung, Developer Experience (DevEx) und der Kommunikation auf Augenhöhe – sowohl im Mentoring von Entwickler-Teams als auch in der technischen Beratung von Stakeholdern.
 
-<div class="resume-layout">
+<div class="resume-layout" markdown="1">
 
-<aside class="resume-sidebar">
+<aside class="resume-sidebar" markdown="1">
 
 ## Kernkompetenzen
 
@@ -61,7 +61,7 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 
 </aside>
 
-<main class="resume-main">
+<main class="resume-main" markdown="1">
 
 ## Berufserfahrung
 
@@ -117,7 +117,7 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 	· <button id="share-page" type="button">Seite teilen</button>
 </p>
 
-<div id="kontakt">
+<div id="kontakt" markdown="1">
 	<p>
 		<a
 			href="#kontakt"
