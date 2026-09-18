@@ -18,11 +18,14 @@
   }
 }
 
+/* Sidebar: Hintergrund entfernt für sauberes Alignment ohne Padding */
 .resume-sidebar {
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
 }
 
-.resume-sidebar h2:first-of-type {
+/* Zwingende Angleichung BEIDER Überschriften auf exakt dieselbe Baseline */
+.resume-sidebar h2:first-of-type,
+.resume-main h2:first-of-type {
   margin-top: 0;
 }
 
@@ -80,4 +83,69 @@
   color: #ffffff;
   outline: none;
   text-decoration: none;
+}
+
+/* Print-Optimierung für sauberen PDF-Export */
+@media print {
+  /* 1. Ausblenden irrelevanter UI-Elemente */
+  .site-header,
+  .site-footer,
+  #share-page {
+    display: none !important;
+  }
+
+  /* 2. Dark-Mode-Reset: Harter Wechsel auf Schwarz-Weiß für den Druck */
+  body, 
+  .page-content, 
+  .wrapper {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 3. Anpassung des Layouts an A4-Proportionen */
+  .resume-layout {
+    display: grid !important;
+    /* Etwas schmalere Sidebar, da A4 weniger Platz als ein Widescreen bietet */
+    grid-template-columns: 240px 1fr !important;
+    gap: 2rem !important;
+    margin-top: 0 !important;
+  }
+
+  .resume-sidebar {
+    background: transparent !important;
+    border: none !important;
+    border-right: 1px solid #ccc !important;
+    padding: 0 1.5rem 0 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  .resume-sidebar h2 {
+    border-bottom: 1px solid #ccc !important;
+    color: #000 !important;
+  }
+
+  /* 4. Typografie und Lesbarkeit */
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+
+  /* 5. Seitenumbrüche kontrollieren (verhindert, dass ein Job mitten in der Liste zerrissen wird) */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  ul, p {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Spezifischer Fix für die Job-Einträge */
+  .resume-main > h3 {
+    margin-top: 1.5rem !important;
+  }
 }
