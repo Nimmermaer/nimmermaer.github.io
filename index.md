@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "{{ site.title }} – {{ site.tagline }}"
+title: Michael Blunck – Web Developer & Fachinformatiker
 ---
 
 {{ site.bio }}
@@ -114,20 +114,12 @@ Senior Webentwickler und TYPO3-Experte mit über 10 Jahren Erfahrung in der Konz
 <p>
 	<a href="https://www.linkedin.com/in/michael-blunck-06843079/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 	· <a href="https://www.xing.com/profile/Michael_Blunck4/" target="_blank" rel="noopener noreferrer">XING</a>
-	· <button id="share-page" type="button">Seite teilen</button>
 </p>
 
 <div id="kontakt" markdown="1">
-	<p>
-		<a
-			href="#kontakt"
-			data-mailto-token="{{ site.contact_email_token }}"
-			data-mailto-vector="{{ site.contact_email_vector }}"
-			rel="nofollow noopener noreferrer"
-		>
-			E-Mail anzeigen
-		</a>
-	</p>
+
+<p><a href="#kontakt" data-mailto-token="{{ site.contact_email_token }}" data-mailto-vector="{{ site.contact_email_vector }}" rel="nofollow noopener noreferrer">E-Mail anzeigen</a></p>
+
 </div>
 
 <script>
