@@ -90,6 +90,9 @@
   /* 1. Ausblenden irrelevanter UI-Elemente */
   .site-header,
   .site-footer,
+  hr, 
+  #kontakt,
+  #netzwerke--kontakt,
   #share-page {
     display: none !important;
   }
@@ -117,7 +120,6 @@
   .resume-sidebar {
     background: transparent !important;
     border: none !important;
-    border-right: 1px solid #ccc !important;
     padding: 0 1.5rem 0 0 !important;
     border-radius: 0 !important;
   }
